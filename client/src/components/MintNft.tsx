@@ -119,7 +119,9 @@ const MintNft: FC<IMint> = ({ lit, address, setAddress }) => {
 
     try {
       setUploading(true);
-      const response = await fetch("http://localhost:8111/initiate-upload");
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_ADDRESS}/initiate-upload`
+      );
       const responseJson = await response.json();
       const id = await getTokenId();
       const uploadResult = await lit.encryptFile(id, file, {
