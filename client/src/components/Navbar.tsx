@@ -2,7 +2,7 @@ import { FC } from "react";
 import { FaSistrix } from "react-icons/fa";
 import MintNft, { IMint } from "./MintNft";
 
-const Navbar: FC<IMint> = ({ lit, address, setAddress }) => {
+const Navbar: FC<IMint> = ({ lit }) => {
   return (
     <main className="flex justify-between items-center mt-4 mb-10">
       <h1 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600 py-4 ml-6">
@@ -21,7 +21,7 @@ const Navbar: FC<IMint> = ({ lit, address, setAddress }) => {
           <FaSistrix />
         </button>
       </div>
-      <MintNft lit={lit} address={address} setAddress={setAddress} />
+      <MintNft lit={lit} />
     </main>
   );
 };

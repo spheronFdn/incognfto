@@ -6,12 +6,11 @@ import erc721Abi from "../abis/ERC721.json";
 
 export interface IMint {
   lit: any;
-  address: string;
-  setAddress: (address: string) => void;
 }
 
-const MintNft: FC<IMint> = ({ lit, address, setAddress }) => {
+const MintNft: FC<IMint> = ({ lit }) => {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [address, setAddress] = useState<string>("");
   const [file, setFile] = useState<File | null>(null);
   const [nftDetails, setNftDetails] = useState({
     cid: "",
@@ -26,7 +25,6 @@ const MintNft: FC<IMint> = ({ lit, address, setAddress }) => {
   const connectWallet = async () => {
     try {
       const { ethereum } = window as any;
-
       if (!ethereum) {
         return {
           error: true,
@@ -34,7 +32,6 @@ const MintNft: FC<IMint> = ({ lit, address, setAddress }) => {
           account: "",
         };
       }
-
       const provider = new ethers.providers.Web3Provider(ethereum, "any");
       await provider.send("eth_requestAccounts", []); // requesting access to accounts
       const signer = provider.getSigner();
