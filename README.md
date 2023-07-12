@@ -18,10 +18,11 @@ You can follow these steps to setup the client:
 2. Clone this repo: https://github.com/spheronFdn/incognfto.git
 3. Go inside the `client` directory
 4. Run `yarn` to install dependencies
-5. Create a .env file in the builder directory and Add the following:
+5. Create a `.env` file in the client directory and Add the following:
   ```
   REACT_APP_CONTRACT_ADDRESS=xxxx
   REACT_APP_BACKEND_ADDRESS=xxxx
+  # for local setup use http://localhost:8111/
   ```
 6. Start the client
   ```sh
@@ -35,14 +36,15 @@ You can follow these steps to setup the server:
 2. Clone this repo: https://github.com/spheronFdn/incognfto.git
 3. Go inside the `server` directory
 4. Run `yarn` to install dependencies
-5. Create a .env file in the server directory and Add the following:
+5. Create a `.env` file in the server directory and Add the following:
   ```
   SPHERON_TOKEN=xxxx
   ```
-7. Start the server
+6. Start the server
   ```sh
   yarn start
   ```
+> Learn how to create an access token [here.](https://docs.spheron.network/rest-api/#creating-an-access-token)
 
 ## How it Works
 Incognfto follows a straightforward workflow to ensure privacy and secure access to NFTs. Here's a high-level overview:
