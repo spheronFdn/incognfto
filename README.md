@@ -51,7 +51,7 @@ Incognfto follows a straightforward workflow to ensure privacy and secure access
 
 1. **Encryption:** NFTs are encrypted using the Lit Protocol before being stored in Incognfto. This process ensures that the content remains confidential and protected.
 
-2. **Minting and Ownership:** Encrypted NFTs are minted within Incognfto, with the owner's name being associated with each NFT. This establishes clear ownership and attribution for the NFTs.
+2. **Minting and Ownership:** Encrypted NFTs are minted within Incognfto, with the owner's wallet address being associated with each NFT. This establishes clear ownership and attribution for the NFTs.
 
 3. **Unlocking NFTs:** When an authorized user attempts to unlock an NFT, Incognfto verifies their access rights. If authorized, the NFT is decrypted, allowing the user to view their NFT within the gallery. The `access control conditions` (ACCs) defined by the Lit Protocol play a crucial role in determining who can decrypt and access the locked NFT data.
 
