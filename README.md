@@ -169,3 +169,19 @@ Armed with the authentication signature and the encrypted NFT's IPFS CID (Conten
 With the NFT content decrypted, the decryptFile function presents the unlocked file to the authorized user. Now, they can fully enjoy their NFT within the private gallery, knowing they have complete ownership and control.
 
 By utilizing the decryptFile function, Incognfto enables authorized users to decrypt their NFT files and view them within the private gallery. The authentication signature and the Lit Node client ensure that only the rightful owners can decrypt and access their NFTs.
+
+## Help
+For help, discussions or any other queries: [Join our Community](https://community.spheron.network/)
+
+## Version History
+* 0.1
+    * Initial Release
+
+## License
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+## Acknowledgments
+- https://docs.spheron.network/sdk/browser/#encrypt-upload
+- https://docs.spheron.network/sdk/browser/#decrypt-upload
+- https://developer.litprotocol.com/v2/sdk/explanation/encryption
+
